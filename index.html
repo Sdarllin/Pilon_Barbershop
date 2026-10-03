@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pilón Barbershop</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+        <h1 id="titulo-negocio">The Pilón Barbershop</h1>
+        <p class="eslogan"><i>Estilo, precisión y tradición para tu corte.</i></p>
+        
+        <!-- Imagen de la fachada del local -->
+        <img src="imagenes/Fachada.jpeg" alt="Fachada de The Pilón Barbershop con los logos en las ventanas" class="imagen-destacada">
+        
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="#catalogo">Catálogo de Cortes</a></li>
+                <li><a href="#agendar">Agendar Cita</a></li>
+                <li><a href="#pago">Métodos de Pago</a></li>
+                <li><a href="#contacto">Contacto y Horarios</a></li>
+                <li><a href="#evidencia">Evidencia de Visita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section id="catalogo" class="seccion-contenido">
+            <h2>Catálogo de Cortes y Servicios</h2>
+            <table class="tabla-servicios">
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Corte Clásico / Degradado (Fade)</b></td>
+                        <td>Corte personalizado a máquina y tijera con acabado profesional.</td>
+                        <td>RD$ 400</td>
+                    </tr>
+                    <tr>
+                        <td><b>Corte + Arreglo de Barba</b></td>
+                        <td>Perfilado de barba con toalla caliente y corte de cabello.</td>
+                        <td>RD$ 650</td>
+                    </tr>
+                    <tr>
+                        <td><b>Diseño y Freestyle</b></td>
+                        <td>Líneas, figuras o diseños personalizados a navaja.</td>
+                        <td>RD$ 250</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="agendar" class="seccion-contenido">
+            <h2>Agendar tu Cita</h2>
+            <form action="#" method="post" class="formulario-reserva">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono / WhatsApp:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 809-555-0199">
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="barbero">Selecciona tu barbero:</label>
+                    <select id="barbero" name="barbero" required>
+                        <option value="">-- Seleccionar --</option>
+                        <option value="pilon">Pilon</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="servicio">Selecciona el servicio:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">-- Seleccionar --</option>
+                        <option value="corte">Corte Clásico / Fade</option>
+                        <option value="corte_barba">Corte + Arreglo de Barba</option>
+                        <option value="diseno">Diseño y Freestyle</option>
+                    </select>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="grupo-formulario">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <input type="submit" value="Confirmar y Reservar Cita" class="boton-enviar">
+            </form>
+        </section>
+
+        <section id="pago" class="seccion-contenido">
+            <h2>Métodos de Pago Aceptados</h2>
+            <p>Aceptamos los siguientes medios de pago directamente en la barbería o mediante transferencia previa:</p>
+            <ul class="lista-pagos">
+                <li>Efectivo en el local</li>
+                <li>Transferencia bancaria (Banco Popular / Banreservas / BHD)</li>
+                <li>Tarjeta de Crédito / Débito (Carnet / Visa / Mastercard)</li>
+                <li>Pago móvil / QR / Toque</li>
+            </ul>
+            <blockquote class="nota-importante">
+                <p><b>Nota:</b> Para garantizar tu turno en horas de alta demanda, puedes realizar la reserva y enviar el comprobante de transferencia por WhatsApp.</p>
+            </blockquote>
+        </section>
+
+        <section id="contacto" class="seccion-contenido">
+            <h2>Contacto y Ubicación</h2>
+            <p><b>Ubicación:</b> Sector Pantoja, Santo Domingo Oeste, República Dominicana</p>
+            <p><b>Teléfono / WhatsApp:</b> <a href="https://wa.me/18295486309" target="_blank" class="enlace-contacto">+1 (829) 548-6309</a></p>
+            <p><b>Síguenos en Instagram:</b> <a href="https://instagram.com/pilonbarbershop" target="_blank" class="enlace-contacto">@pilonbarbershop</a></p>
+
+            <h3>Horario de Atención</h3>
+            <ul class="lista-horarios">
+                <li><b>Martes a Sábado:</b> 9:00 AM - 8:00 PM</li>
+                <li><b>Domingos:</b> 9:00 AM - 7:00 PM</li>
+            </ul>
+        </section>
+
+        <section id="evidencia" class="seccion-contenido">
+            <h2>Evidencia de Visita</h2>
+            <p>Fotografía realizada durante la entrevista y levantamiento de requerimientos en el establecimiento</p>
+            <img src="imagenes/Visita.jpeg" alt="Fotografía del estudiante dentro de The Pilón Barbershop con el barbero y un cliente" class="imagen-destacada">
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 The Pilón Barbershop. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
